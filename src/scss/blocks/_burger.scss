@@ -1,0 +1,44 @@
+@import "mixin";
+
+.burger {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 46px;
+    height: 46px;
+    background-color: #ffffff0d;
+    border-radius: 5px;
+    @include transition(0.5s);
+    overflow: hidden;
+    z-index: 21;
+    span {
+        position: absolute;
+        height: 2px;
+        width: 28px;
+        background-color: var(--white);
+        border-radius: 20px;
+        transition: 0.5s;
+        &:nth-child(1) {
+            right: 9px;
+            width: 23px;
+            transform: translateY(-7px);
+        }
+        &:nth-child(3) {
+            right: 9px;
+            width: 17px;
+            transform: translateY(7px);
+        }
+    }
+    &.is-active span:nth-child(1) {
+        width: 28px;
+        transform: translateY(0) rotate(45deg);
+    }
+    &.is-active span:nth-child(2) {
+        transform: translateX(46px);
+    }
+    &.is-active span:nth-child(3) {
+        width: 28px;
+        transform: translateY(0) rotate(315deg);
+    }
+}

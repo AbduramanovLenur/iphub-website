@@ -1,0 +1,257 @@
+@import "mixin";
+
+.teams {
+    &__title {
+        @include title(#000);
+        margin-bottom: 16px;
+        max-width: 350px;
+    }
+    &__subtitle {
+        font-weight: 500;
+        color: var(--grey);
+        margin-bottom: 50px;
+        max-width: 707px;
+    }
+    &__slide {
+        &-box {
+            max-width: 289px;
+            z-index: 50;
+        }
+    }
+    &__pic {
+        display: flex;
+        margin-bottom: 10px;
+        img {
+            object-fit: cover;
+        }
+    }
+    &__name {
+        font-size: 18px;
+        line-height: 1.61;
+        max-width: 289px;
+        color: var(--dark);
+        margin-bottom: 5px;
+        cursor: pointer;
+    }
+    &__position {
+        font-size: 14px;
+        line-height: 1.42;
+        color: var(--dark-grey);
+        cursor: pointer;
+    }
+    &__box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-bottom: 36px;
+    }
+    &__content {
+        &-title {
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 1.58;
+            color: var(--dark);
+        }
+        &-btns {
+            display: flex;
+        }
+        &-btn {
+            font-weight: 500;
+            color: var(--dark-grey);
+            cursor: pointer;
+            &.is-active {
+                color: var(--red);
+            }
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+        }
+    }
+    &__forum {
+        &-wrapper {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 38px 0 58px;
+            &:not(:last-child) {
+                border-bottom: 1px solid #9b8f8f;
+            }
+        }
+        &-box {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            max-width: 445px;
+            width: 100%;
+        }
+        &-pic {
+            width: 100px;
+            height: 100px;
+        }
+        &-name {
+            font-weight: 500;
+            color: var(--dark);
+            margin-bottom: 5px;
+            max-width: 330px;
+        }
+        &-position {
+            font-size: 14px;
+            line-height: 1.42;
+            color: var(--dark-grey);
+            max-width: 330px;
+        }
+        &-content {
+            max-width: 495px;
+        }
+        &-topic {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 1.61;
+            color: var(--dark);
+            padding-bottom: 5px;
+            border-bottom: 1px solid #ff0101;
+            max-width: 495px;
+            margin-bottom: 10px;
+        }
+        &-subtopic {
+            color: var(--dark-grey);
+            max-width: 495px;
+        }
+        &-dates {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 115px;
+        }
+        &-date {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 1.61;
+            color: var(--dark);
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        &-time {
+            color: var(--dark);
+        }
+    }
+}
+.teams {
+    &-human {
+        opacity: 0;
+        visibility: hidden;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 100;
+        overflow: hidden;
+        @include transition(0.5s);
+        &.is-active {
+            opacity: 1;
+            visibility: visible;
+        }
+        &__inner {
+            position: relative;
+            display: flex;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            max-width: 1165px;
+        }
+        &__pic {
+            max-width: 479px;
+            height: 531px;
+            img {
+                object-fit: cover;
+                border-radius: 10px;
+            }
+        }
+        &__content {
+            padding: 40px;
+            color: var(--dark-grey);
+        }
+        &__name {
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 1.58;
+            color: var(--dark);
+            max-width: 575px;
+        }
+        &__position {
+            color: var(--dark-grey);
+            margin-bottom: 30px;
+            max-width: 575px;
+        }
+        &__about {
+            max-width: 600px;
+        }
+        &__close {
+            position: absolute;
+            top: 27px;
+            right: 27px;
+        }
+    }
+    &__decor {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+@media (max-width: 1024px) {
+    .teams {
+        &__forum {
+            &-wrapper {
+                gap: 30px;
+            }
+        }
+    }
+}
+@media (max-width: 864px) {
+    .teams {
+        &__title {
+            margin-bottom: 10px;
+        }
+        &__subtitle {
+            margin-bottom: 30px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .teams {
+        &__title {
+            font-size: 32px;
+        }
+    }
+}
+@media (max-width: 720px) {
+    .teams {
+        &__forum {
+            &-wrapper {
+                flex-direction: column;
+            }
+        }
+    }
+}
+@media (max-width: 640px) {
+    .teams {
+        &__forum {
+            &-wrapper {
+                padding: 20px 0 38px;
+            }
+            &-dates {
+                align-items: flex-start;
+            }
+            &-date {
+                text-align: left;
+            }
+        }
+    }
+}

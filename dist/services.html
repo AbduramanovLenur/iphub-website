@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>IPhub</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="logo-pic">
+                        <a class="logo-href" href="index.html">
+                            <img class="logo" src="assets/img/logo.svg" width="129" height="29" alt="logo"
+                                loading="lazy">
+                        </a>
+                    </div>
+                    <div class="header__info">
+                        <a href="tel:+78888888888" class="header__tel">+7 (888) 888 88 88</a>
+                        <button class="header__consultation" data-consultaion-btn>
+                            Получить консультацию
+                        </button>
+                    </div>
+                    <nav class="menu menu-hide">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a class="menu__link" href="services.html">
+                                    Услуги
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="case.html">
+                                    Кейсы
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="faq.html">
+                                    FAQ
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="hamburger">
+            <div class="hamburger__inner">
+                <div class="hamburger__box">
+                    <ul class="hamburger__menu">
+                        <li class="hamburger__menu-item">
+                            <a class="hamburger__menu-link" href="services.html">
+                                Услуги
+                            </a>
+                        </li>
+                        <li class="hamburger__menu-item">
+                            <a class="hamburger__menu-link" href="case.html">
+                                Кейсы
+                            </a>
+                        </li>
+                        <li class="hamburger__menu-item">
+                            <a class="hamburger__menu-link" href="faq.html">
+                                FAQ
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hamburger__box">
+                    <h4 class="hamburger__title">
+                        Наши контакты:
+                    </h4>
+                    <ul class="hamburger__list">
+                        <li class="hamburger__item">
+                            <a href="mailto:example@iphub.com" class="hamburger__link">
+                                example@iphub.com
+                            </a>
+                        </li>
+                        <li class="hamburger__item">
+                            <a href="tel:+78888888888" class="hamburger__tel">
+                                +7 (888) 888 88 88
+                            </a>
+                        </li>
+                    </ul>
+                    <h4 class="hamburger__title">
+                        Мы в соцсетях:
+                    </h4>
+                    <ul class="hamburger__socials">
+                        <li class="hamburger__social">
+                            <a href="#" class="hamburger__social-link">
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="hamburger__social">
+                            <a href="#" class="hamburger__social-link">
+                                Instagram
+                            </a>
+                        </li>
+                    </ul>
+                    <h4 class="hamburger__title">
+                        Как добраться:
+                    </h4>
+                    <address class="hamburger__address">
+                        <p class="hamburger__info">
+                            123317, г. Москва, Пресненская наб., д. <br>
+                            8, стр. 1, эт. 3, п. 1, оф. 10
+                        </p>
+                        <p class="hamburger__index-1">
+                            ИНН: 7703472433
+                        </p>
+                        <p class="hamburger__index-2">
+                            КПП: 770301001
+                        </p>
+                    </address>
+                    <div class="hamburger__pic">
+                        <img class="hamburger__img" width="270" height="299" src="assets/img/hamburger-img.png"
+                            alt="pic" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="breadcrumb">
+            <div class="container">
+                <ul class="breadcrumb__list">
+                    <li class="breadcrumb__item">
+                        <a class="breadcrumb__arrow-link" href="services.html">
+                            <img src="assets/img/breadcrumb-arrow.png" width="26" height="8" alt="arrow" loading="lazy">
+                        </a>
+                    </li>
+                    <li class="breadcrumb__item breadcrumb__decor">
+                        <a class="breadcrumb__link" href="index.html">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="breadcrumb__item">
+                        <span class="breadcrumb__active-page">
+                            Все услуги
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <main class="main">
+            <section class="services">
+                <div class="container">
+                    <div class="services__inner">
+                        <h2 class="services__title">
+                            Все услуги
+                        </h2>
+                        <form class="services__form">
+                            <input class="services__input" type="text" placeholder="Начните вводить слово"
+                                data-js-services-input>
+                        </form>
+                        <div class="services__wrapper">
+                            <h4 class="services__wrapper-title">
+                                Категории
+                            </h4>
+                            <ul class="services__wrapper-list" data-js-filter-parent>
+                                <li class="services__wrapper-item is-active" data-js-s="all" data-js-services-btn>
+                                    <div class="services__wrapper-box">
+                                        <p class="services__wrapper-text">
+                                            Все услуги
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="services__wrapper-item" data-js-s="znak" data-js-services-btn>
+                                    <div class="services__wrapper-box">
+                                        <p class="services__wrapper-text">
+                                            Товарные знаки
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="services__wrapper-item" data-js-s="patent" data-js-services-btn>
+                                    <div class="services__wrapper-box">
+                                        <p class="services__wrapper-text">
+                                            Патенты
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="services__wrapper-item" data-js-s="dizayn" data-js-services-btn>
+                                    <div class="services__wrapper-box">
+                                        <p class="services__wrapper-text">
+                                            Дизайн
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="services__wrapper-item" data-js-s="it" data-js-services-btn>
+                                    <div class="services__wrapper-box">
+                                        <p class="services__wrapper-text">
+                                            IT
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="services__wrapper-item" data-js-s="zashita" data-js-services-btn>
+                                    <div class="services__wrapper-box">
+                                        <p class="services__wrapper-text">
+                                            Защита
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="services__wrapper-item" data-js-s="upravlenie" data-js-services-btn>
+                                    <div class="services__wrapper-box">
+                                        <p class="services__wrapper-text">
+                                            Управление
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="services__wrapper-item" data-js-s="learn" data-js-services-btn>
+                                    <div class="services__wrapper-box">
+                                        <p class="services__wrapper-text">
+                                            Обучение
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <select class="services__select" name="services" data-js-services-select>
+                                <option value="all">
+                                    Все услуги
+                                </option>
+                                <option value="znak">
+                                    Товарные знаки
+                                </option>
+                                <option value="patent">
+                                    Патенты
+                                </option>
+                                <option value="dizayn">
+                                    Дизайн
+                                </option>
+                                <option value="it">
+                                    IT
+                                </option>
+                                <option value="zashita">
+                                    Защита
+                                </option>
+                                <option value="upravlenie">
+                                    Управление
+                                </option>
+                                <option value="learn">
+                                    Обучение
+                                </option>
+                            </select>
+                        </div>
+                        <ul class="services__list">
+                            <li class="services__item znak" data-js-service data-js-service-filter>
+                                <div class="services__box">
+                                    <div class="services__pic">
+                                        <a href="registration-1.html">
+                                            <img src="assets/img/services-img-8.png" width="167" height="176"
+                                                alt="solution" loading="lazy">
+                                        </a>
+                                    </div>
+                                    <p class="services__text">
+                                        <a href="registration-1.html">
+                                            Регистрация товарного знака
+                                        </a>
+                                    </p>
+                                    <p class="services__subtitle">
+                                        Товарные знаки
+                                    </p>
+                                    <img class="services__shape" width="20" height="20" src="assets/img/shape.svg"
+                                        alt="pic" loading="lazy">
+                                </div>
+                            </li>
+                            <li class="services__item it" data-js-service data-js-service-filter>
+                                <div class="services__box">
+                                    <div class="services__pic">
+                                        <a href="registration-1.html">
+                                            <img src="assets/img/services-img-1.png" width="167" height="176"
+                                                alt="solution" loading="lazy">
+                                        </a>
+                                    </div>
+                                    <p class="services__text">
+                                        <a href="registration-1.html">
+                                            Предварительная проверка обозначения
+                                        </a>
+                                    </p>
+                                    <p class="services__subtitle">
+                                        IT
+                                    </p>
+                                    <img class="services__shape" src="assets/img/shape.svg" width="20" height="20"
+                                        alt="pic" loading="lazy">
+                                </div>
+                            </li>
+                            <li class="services__item learn" data-js-service data-js-service-filter>
+                                <div class="services__box">
+                                    <div class="services__pic">
+                                        <a href="registration-1.html">
+                                            <img src="assets/img/services-img-2.png" width="167" height="176"
+                                                alt="solution">
+                                        </a>
+                                    </div>
+                                    <p class="services__text">
+                                        <a href="registration-1.html">
+                                            Международная регистрация
+                                        </a>
+                                    </p>
+                                    <p class="services__subtitle">
+                                        Обучение
+                                    </p>
+                                    <img class="services__shape" src="assets/img/shape.svg" width="20" height="20"
+                                        alt="pic" loading="lazy">
+                                </div>
+                            </li>
+                            <li class="services__item znak" data-js-service data-js-service-filter>
+                                <div class="services__box">
+                                    <div class="services__pic">
+                                        <a href="registration-1.html">
+                                            <img src="assets/img/services-img-3.png" width="167" height="176"
+                                                alt="solution" loading="lazy">
+                                        </a>
+                                    </div>
+                                    <p class="services__text">
+                                        <a href="registration-1.html">
+                                            Продление товарного знака
+                                        </a>
+                                    </p>
+                                    <p class="services__subtitle">
+                                        Товарные знаки
+                                    </p>
+                                    <img class="services__shape" src="assets/img/shape.svg" width="20" height="20"
+                                        alt="pic" loading="lazy">
+                                </div>
+                            </li>
+                            <li class="services__item zashita" data-js-service data-js-service-filter>
+                                <div class="services__box">
+                                    <div class="services__pic">
+                                        <a href="registration-1.html">
+                                            <img src="assets/img/services-img-4.png" width="167" height="176"
+                                                alt="solution" loading="lazy">
+                                        </a>
+                                    </div>
+                                    <p class="services__text">
+                                        <a href="registration-1.html">
+                                            Изменение сведений в товарном знаке
+                                        </a>
+                                    </p>
+                                    <p class="services__subtitle">
+                                        Защита
+                                    </p>
+                                    <img class="services__shape" src="assets/img/shape.svg" width="20" height="20"
+                                        alt="pic" loading="lazy">
+                                </div>
+                            </li>
+                            <li class="services__item dizayn" data-js-service data-js-service-filter>
+                                <div class="services__box">
+                                    <div class="services__pic">
+                                        <a href="registration-1.html">
+                                            <img src="assets/img/services-img-5.png" width="167" height="176"
+                                                alt="solution" loading="lazy">
+                                        </a>
+                                    </div>
+                                    <p class="services__text">
+                                        <a href="registration-1.html">
+                                            Получение дубликата свидетельства
+                                        </a>
+                                    </p>
+                                    <p class="services__subtitle">
+                                        Дизайн
+                                    </p>
+                                    <img class="services__shape" src="assets/img/shape.svg" width="20" height="20"
+                                        alt="pic" loading="lazy">
+                                </div>
+                            </li>
+                            <li class="services__item dizayn" data-js-service data-js-service-filter>
+                                <div class="services__box">
+                                    <div class="services__pic">
+                                        <a href="registration-1.html">
+                                            <img src="assets/img/services-img-6.png" width="167" height="176"
+                                                alt="solution" loading="lazy">
+                                        </a>
+                                    </div>
+                                    <p class="services__text">
+                                        <a href="registration-1.html">
+                                            Ответ на уведомление
+                                        </a>
+                                    </p>
+                                    <p class="services__subtitle">
+                                        Дизайн
+                                    </p>
+                                    <img class="services__shape" src="assets/img/shape.svg" width="20" height="20"
+                                        alt="pic" loading="lazy">
+                                </div>
+                            </li>
+                            <li class="services__item learn" data-js-service data-js-service-filter>
+                                <div class="services__box">
+                                    <div class="services__pic">
+                                        <a href="registration-1.html">
+                                            <img src="assets/img/services-img-7.png" width="167" height="176"
+                                                alt="solution" loading="lazy">
+                                        </a>
+                                    </div>
+                                    <p class="services__text">
+                                        <a href="registration-1.html">
+                                            Внесение знака реестр ФТС
+                                        </a>
+                                    </p>
+                                    <p class="services__subtitle">
+                                        Обучение
+                                    </p>
+                                    <img class="services__shape" src="assets/img/shape.svg" width="20" height="20"
+                                        alt="pic" loading="lazy">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="apllication section-padding">
+                <div class="container">
+                    <div class="apllication__inner">
+                        <div class="apllication__content" data-aos="fade-right" data-aos-duration="3000">
+                            <h2 class="apllication__title">
+                                Оставьте заявку на консультацию и мы вам поможем!
+                            </h2>
+                            <p class="apllication__subtitle">
+                                У нас есть решения для всех ваших потребностей в сфере защиты и регистрации
+                                интеллектуальной собственности
+                            </p>
+                            <button class="apllication__btn hover-btn" data-consultaion-btn>
+                                <div class="btn-hover"></div>
+                                Получить индивидуальную консультацию
+                            </button>
+                        </div>
+                        <div class="apllication__pic" data-aos="fade-left" data-aos-duration="3000">
+                            <img src="assets/img/decor-1.png" width="350" height="331" alt="decor" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__top">
+                        <div class="footer__pic">
+                            <a class="footer__pic-logo" href="index.html">
+                                <img class="footer__logo" src="assets/img/logo-footer.png" width="209" height="47"
+                                    alt="logo" loading="lazy">
+                            </a>
+                        </div>
+                        <p class="footer__text">
+                            Общество сограниченной
+                            ответственностью «Центр интеллектуальной собственности и инноваций „АйПиХаб“»
+                        </p>
+                        <address class="footer__address">
+                            <p class="footer__info">
+                                123317, г. Москва, Пресненская наб., д. <br>
+                                8, стр. 1, эт. 3, п. 1, оф. 10
+                            </p>
+                            <p class="footer__index-1">
+                                <span class="footer__span">
+                                    ИНН:
+                                </span>
+                                7703472433
+                            </p>
+                            <p class="footer__index-2">
+                                <span class="footer__span">
+                                    КПП:
+                                </span>
+                                770301001
+                            </p>
+                        </address>
+                    </div>
+                    <div class="footer__center">
+                        <div class="footer__menu">
+                            <h5 class="footer__title">
+                                Навигация по сайту:
+                            </h5>
+                            <nav class="menu">
+                                <ul class="menu__list menu__vertical">
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="services.html">
+                                            Услуги
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="case.html">
+                                            Кейсы
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="faq.html">
+                                            FAQ
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="footer__contacts">
+                            <h5 class="footer__title">
+                                Наши контакты:
+                            </h5>
+                            <ul class="footer__contacts-list">
+                                <li class="footer__contacts-item">
+                                    <a class="footer__contacts-link" href="mailto:example@iphub.com">
+                                        example@iphub.com
+                                    </a>
+                                </li>
+                                <li class="footer__contacts-item">
+                                    <a class="footer__contacts-link" href="tel:+78888888888">
+                                        +7 (888) 888 88 88
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__social">
+                            <h5 class="footer__title">
+                                Мы в соцсетях:
+                            </h5>
+                            <ul class="footer__social-list">
+                                <li class="footer__social-item">
+                                    <a class="footer__social-link" href="404.html">
+                                        Facebook
+                                    </a>
+                                </li>
+                                <li class="footer__social-item">
+                                    <a class="footer__social-link" href="404.html">
+                                        Instagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__place">
+                            <h5 class="footer__title">
+                                Как добраться:
+                            </h5>
+                            <p class="footer__cart">
+                                <a class="footer__cart-link" href="404.html">
+                                    Схема проезда
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="footer__bottom">
+                        <p class="footer__copyright">
+                            © 2021 IPhub. Все права защищены.
+                        </p>
+                        <p class="footer__subtext">
+                            Публичная оферта
+                        </p>
+                        <p class="footer__subtext">
+                            Пользовательское соглашение
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="modal" data-js-modal>
+        <div class="modal__inner">
+            <h3 class="modal__title">
+                Оставьте заявку
+            </h3>
+            <p class="modal__subtitle">
+                Укажите свои данные, и наш специалист свяжется с вами
+            </p>
+            <form class="modal__form">
+                <label class="modal__label-name" for="name">
+                    Как к вам обращаться
+                    <input class="modal__input-name" id="name" type="text" name="name" required>
+                </label>
+                <label class="modal__label-phone" for="phone">
+                    Номер телефона / WhatsApp
+                    <input class="modal__input-phone" id="phone" type="text" name="phone" data-js-phone required>
+                </label>
+                <label class="modal__label-mail" for="mail">
+                    Почта
+                    <input class="modal__input-mail" id="mail" type="text" name="mail" required>
+                </label>
+                <label class="modal__label-textarea" for="textarea">
+                    Запрос
+                    <textarea class="modal__textarea" id="textarea" name="message"></textarea>
+                </label>
+                <label class="modal__label-checkbox" for="checkbox">
+                    <input class="modal__checkbox" type="checkbox" id="checkbox">
+                    <span class="check-style"></span>
+                    <p class="modal__checkbox-text">
+                        Я принимаю соглашение на обработку персональных данных и политику конфиденциальности
+                    </p>
+                </label>
+                <button class="modal__btn btn-red" data-js-btn>
+                    Отправить
+                </button>
+            </form>
+            <img class="modal__close" src="assets/img/close.png" alt="close" data-js-modal-close>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

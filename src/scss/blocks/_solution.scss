@@ -1,0 +1,124 @@
+@import "mixin";
+
+.solution {
+    &__title {
+        @include title(#000);
+        margin-bottom: 16px;
+    }
+    &__subtitle {
+        color: var(--grey);
+        max-width: 707px;
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+    &__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background-color: #1b1b1b;
+        border-radius: 8px;
+        overflow: hidden;
+        height: 400px;
+        &:hover {
+            .solution {
+                &__pic {
+                    img {
+                        transform: scale(0.75);
+                    }
+                }
+                &__text {
+                    transform: translateY(-95px);
+                    color: #fff;
+                }
+                &__subtext {
+                    transform: initial;
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+    &__shape {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    &__pic {
+        padding: 78px 78px 0;
+        margin-bottom: 100px;
+        img {
+            width: 135px;
+            height: 142px;
+            object-fit: cover;
+            @include transition(0.5s);
+        }
+    }
+    &__texts {
+        position: relative;
+        padding: 0 25px 20px;
+    }
+    &__text {
+        color: var(--grey);
+        @include transition(0.5s);
+        max-width: 250px;
+        cursor: pointer;
+    }
+    &__subtext {
+        position: absolute;
+        bottom: 0;
+        transform: translateY(100%);
+        @include transition(0.5s);
+        max-width: 250px;
+        padding: 0 0 10px;
+        opacity: 0;
+        visibility: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        overflow: hidden;
+        cursor: pointer;
+    }
+}
+@media (max-width: 1300px) {
+    .solution {
+        &__pic {
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+}
+@media (max-width: 1152px) {
+    .solution {
+        &__pic {
+            padding: 78px 50px 0;
+        }
+    }
+}
+@media (max-width: 900px) {
+    .solution {
+        &__content {
+            flex-wrap: wrap;
+        }
+    }
+}
+@media (max-width: 868px) {
+    .solution {
+        &__subtitle {
+            margin-bottom: 30px;
+        }
+    }
+}
+@media (max-width: 480px) {
+    .solution {
+        &__title {
+            font-size: 28px;
+        }
+    }
+}

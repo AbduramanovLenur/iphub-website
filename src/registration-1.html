@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>IPhub</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="logo-pic">
+                        <a class="logo-href" href="index.html">
+                            <img class="logo" src="assets/img/logo.svg" width="129" height="29" alt="logo" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="header__info">
+                        <a href="tel:+78888888888" class="header__tel">+7 (888) 888 88 88</a>
+                        <button class="header__consultation" data-consultaion-btn>
+                            Получить консультацию
+                        </button>
+                    </div>
+                    <nav class="menu menu-hide">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">
+                                    Услуги
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">
+                                    Кейсы
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">
+                                    FAQ
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="hamburger">
+            <div class="hamburger__inner">
+                <div class="hamburger__box">
+                    <ul class="hamburger__menu">
+                        <li class="hamburger__menu-item">
+                            <a href="#" class="hamburger__menu-link">
+                                Услуги
+                            </a>
+                        </li>
+                        <li class="hamburger__menu-item">
+                            <a href="#" class="hamburger__menu-link">
+                                Кейсы
+                            </a>
+                        </li>
+                        <li class="hamburger__menu-item">
+                            <a href="#" class="hamburger__menu-link">
+                                FAQ
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hamburger__box">
+                    <h4 class="hamburger__title">
+                        Наши контакты:
+                    </h4>
+                    <ul class="hamburger__list">
+                        <li class="hamburger__item">
+                            <a href="mailto:example@iphub.com" class="hamburger__link">
+                                example@iphub.com
+                            </a>
+                        </li>
+                        <li class="hamburger__item">
+                            <a href="tel:+78888888888" class="hamburger__tel">
+                                +7 (888) 888 88 88
+                            </a>
+                        </li>
+                    </ul>
+                    <h4 class="hamburger__title">
+                        Мы в соцсетях:
+                    </h4>
+                    <ul class="hamburger__socials">
+                        <li class="hamburger__social">
+                            <a href="#" class="hamburger__social-link">
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="hamburger__social">
+                            <a href="#" class="hamburger__social-link">
+                                Instagram
+                            </a>
+                        </li>
+                    </ul>
+                    <h4 class="hamburger__title">
+                        Как добраться:
+                    </h4>
+                    <address class="hamburger__address">
+                        <p class="hamburger__info">
+                            123317, г. Москва, Пресненская наб., д. <br>
+                            8, стр. 1, эт. 3, п. 1, оф. 10
+                        </p>
+                        <p class="hamburger__index-1">
+                            ИНН: 7703472433
+                        </p>
+                        <p class="hamburger__index-2">
+                            КПП: 770301001
+                        </p>
+                    </address>
+                    <div class="hamburger__pic">
+                        <img class="hamburger__img" src="assets/img/hamburger-img.png" width="270" height="299" alt="pic" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="breadcrumb">
+            <div class="container">
+                <ul class="breadcrumb__list">
+                    <li class="breadcrumb__item">
+                        <a class="breadcrumb__arrow-link" href="services.html">
+                            <img src="assets/img/breadcrumb-arrow.png" alt="arrow">
+                        </a>
+                    </li>
+                    <li class="breadcrumb__item breadcrumb__decor">
+                        <a class="breadcrumb__link" href="index.html">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="breadcrumb__item breadcrumb__decor">
+                        <a class="breadcrumb__link" href="services.html">
+                            Все услуги
+                        </a>
+                    </li>
+                    <li class="breadcrumb__item">
+                        <span class="breadcrumb__active-page">
+                            Регистрация товарного знака
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <main class="main">
+            <section class="registration">
+                <div class="container">
+                    <div class="registration__inner">
+                        <div class="registration__content">
+                            <div class="registration__overhead-titles">
+                                <p class="registration__overhead-title">
+                                    Товарные знаки
+                                </p>
+                                <p class="registration__overhead-title">
+                                    Дизайн
+                                </p>
+                            </div>
+                            <h2 class="registration__title">
+                                Регистрация товарного знака
+                            </h2>
+                            <p class="registration__subtitle">
+                                Полный цикл регистрации обозначения в качестве товарного знака, начиная от подачи
+                                заявки, заканчивая получением Свидетельства
+                            </p>
+                            <button class="registration__btn hover-btn" data-consultaion-btn>
+                                <div class="btn-hover"></div>
+                                Получить индивидуальную консультацию
+                            </button>
+                        </div>
+                        <div class="registration__pic">
+                            <img src="assets/img/decor-2.png" width="232" height="264" alt="decor" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="need">
+                <div class="container">
+                    <div class="need__inner">
+                        <h2 class="need__title">
+                            Когда необходимо
+                        </h2>
+                        <ul class="need__list">
+                            <li class="need__item">
+                                <div class="need__box">
+                                    <h3 class="need__box-title">
+                                        Защита своего бренда
+                                    </h3>
+                                    <p class="need__box-text">
+                                        Регистрация товарного знака позволяет получить правовую охрану своего бренда
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="need__item">
+                                <div class="need__box">
+                                    <h3 class="need__box-title">
+                                        Ненарушение прав
+                                    </h3>
+                                    <p class="need__box-text">
+                                        Наличие прав подтверждает соответствие бренда требованиям законодательства
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="need__item">
+                                <div class="need__box">
+                                    <h3 class="need__box-title">
+                                        Нематериальный актив
+                                    </h3>
+                                    <p class="need__box-text">
+                                        Права на знак могут приносить дополнительный доход при их использовании и
+                                        распоряжении (коммерциализации)
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="works">
+                <div class="container">
+                    <div class="works__inner">
+                        <h2 class="works__title" data-aos="fade-up" data-aos-duration="2000">
+                            Процесс работы
+                        </h2>
+                        <ul class="works__list">
+                            <li class="works__item" data-aos="flip-left" data-aos-duration="2000">
+                                <div class="works__box">
+                                    <div class="works__content">
+                                        <div class="works__number">
+                                            <img src="assets/img/1.png" width="36" height="46" alt="num" loading="lazy">
+                                        </div>
+                                        <h3 class="works__content-title">
+                                            Проверка бренда
+                                        </h3>
+                                    </div>
+                                    <p class="works__descr">
+                                        Оценка вероятности регистрации, выявление знаков, которые могут помешать
+                                        регистрации
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="works__item" data-aos="flip-left" data-aos-duration="2000">
+                                <div class="works__box">
+                                    <div class="works__content">
+                                        <div class="works__number">
+                                            <img src="assets/img/2.png" width="36" height="46" alt="num" loading="lazy">
+                                        </div>
+                                        <h3 class="works__content-title">
+                                            Подготовка отчета
+                                        </h3>
+                                    </div>
+                                    <p class="works__descr">
+                                        Проведение анализа по всем основаниям для отказа в регистрации знака
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="works__item" data-aos="flip-left" data-aos-duration="2000">
+                                <div class="works__box">
+                                    <div class="works__content">
+                                        <div class="works__number">
+                                            <img src="assets/img/3.png" width="36" height="46" alt="num" loading="lazy">
+                                        </div>
+                                        <h3 class="works__content-title">
+                                            Рекомендации
+                                        </h3>
+                                    </div>
+                                    <p class="works__descr">
+                                        Подготовка выводов и рекомендаций для регистрации товарного знака
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="services-reg">
+                <div class="container">
+                    <div class="services-reg__inner">
+                        <div class="services-reg__content" data-aos="fade-up-right" data-aos-duration="1000">
+                            <h2 class="services-reg__title">
+                                Сопутствующие услуги
+                            </h2>
+                            <a class="services-reg__btn btn-red" href="services.html">
+                                Все услуги
+                            </a>
+                        </div>
+                        <div class="swiper services-reg-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide services-reg-slide" data-aos="zoom-in" data-aos-duration="2000">
+                                    <div class="services-reg__box">
+                                        <div class="services-reg__pic">
+                                            <a href="registration-1.html">
+                                                <img src="assets/img/services-reg-1.png" width="167" height="176" alt="pic" loading="lazy">
+                                            </a>
+                                        </div>
+                                        <p class="services-reg__text">
+                                            <a href="registration-1.html">
+                                                Регистрация товарного знака
+                                            </a>
+                                        </p>
+                                        <p class="services-reg__subtitle-1">
+                                            Товарные знаки
+                                        </p>
+                                        <p class="services-reg__subtitle-2">
+                                            Дизайн
+                                        </p>
+                                        <img class="services-reg__shape" width="20" height="20" src="assets/img/shape.svg" alt="pic" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide services-reg-slide" data-aos="zoom-in" data-aos-duration="2000">
+                                    <div class="services-reg__box">
+                                        <div class="services-reg__pic">
+                                            <a href="registration-1.html">
+                                                <img src="assets/img/services-reg-2.png" width="167" height="176" alt="pic" loading="lazy">
+                                            </a>
+                                        </div>
+                                        <p class="services-reg__text">
+                                            <a href="registration-1.html">
+                                                Международная регистрация
+                                            </a>
+                                        </p>
+                                        <p class="services-reg__subtitle-1">
+                                            Товарные знаки
+                                        </p>
+                                        <p class="services-reg__subtitle-2">
+                                            Дизайн
+                                        </p>
+                                        <img class="services-reg__shape" src="assets/img/shape.svg" width="20" height="20" alt="pic" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide services-reg-slide" data-aos="zoom-in" data-aos-duration="2000">
+                                    <div class="services-reg__box">
+                                        <div class="services-reg__pic">
+                                            <a href="registration-1.html">
+                                                <img src="assets/img/services-reg-3.png" width="167" height="176" alt="pic" loading="lazy">
+                                            </a>
+                                        </div>
+                                        <p class="services-reg__text">
+                                            <a href="registration-1.html">
+                                                Продление товарного знака
+                                            </a>
+                                        </p>
+                                        <p class="services-reg__subtitle-1">
+                                            Товарные знаки
+                                        </p>
+                                        <p class="services-reg__subtitle-2">
+                                            Дизайн
+                                        </p>
+                                        <img class="services-reg__shape" src="assets/img/shape.svg" width="20" height="20" alt="pic" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide services-reg-slide" data-aos="zoom-in" data-aos-duration="2000">
+                                    <div class="services-reg__box">
+                                        <div class="services-reg__pic">
+                                            <a href="registration-1.html">
+                                                <img src="assets/img/services-reg-4.png" width="167" height="176" alt="pic" loading="lazy">
+                                            </a>
+                                        </div>
+                                        <p class="services-reg__text">
+                                            <a href="registration-1.html">
+                                                Изменение сведений в товарном знаке
+                                            </a>
+                                        </p>
+                                        <p class="services-reg__subtitle-1">
+                                            Товарные знаки
+                                        </p>
+                                        <p class="services-reg__subtitle-2">
+                                            Дизайн
+                                        </p>
+                                        <img class="services-reg__shape" src="assets/img/shape.svg" width="20" height="20" alt="pic" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide services-reg-slide" data-aos="zoom-in" data-aos-duration="2000">
+                                    <div class="services-reg__box">
+                                        <div class="services-reg__pic">
+                                            <a href="registration-1.html">
+                                                <img src="assets/img/services-reg-5.png" width="167" height="176" alt="pic" loading="lazy">
+                                            </a>
+                                        </div>
+                                        <p class="services-reg__text">
+                                            <a href="registration-1.html">
+                                                Получение дубликата свидетельства
+                                            </a>
+                                        </p>
+                                        <p class="services-reg__subtitle-1">
+                                            Товарные знаки
+                                        </p>
+                                        <p class="services-reg__subtitle-2">
+                                            Дизайн
+                                        </p>
+                                        <img class="services-reg__shape" src="assets/img/shape.svg" width="20" height="20" alt="pic" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide services-reg-slide" data-aos="zoom-in" data-aos-duration="2000">
+                                    <div class="services-reg__box">
+                                        <div class="services-reg__pic">
+                                            <a href="registration-1.html">
+                                                <img src="assets/img/services-reg-1.png" width="167" height="176" alt="pic" loading="lazy">
+                                            </a>
+                                        </div>
+                                        <p class="services-reg__text">
+                                            <a href="registration-1.html">
+                                                Регистрация товарного знака
+                                            </a>
+                                        </p>
+                                        <p class="services-reg__subtitle-1">
+                                            Товарные знаки
+                                        </p>
+                                        <p class="services-reg__subtitle-2">
+                                            Дизайн
+                                        </p>
+                                        <img class="services-reg__shape" src="assets/img/shape.svg" width="20" height="20" alt="pic" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-prev services-reg-button-prev" data-aos="fade-right" data-aos-duration="2000"></div>
+                            <div class="swiper-button-next services-reg-button-next" data-aos="fade-left" data-aos-duration="2000"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="apllication section-padding">
+                <div class="container">
+                    <div class="apllication__inner">
+                        <div class="apllication__content" data-aos="fade-right" data-aos-duration="3000">
+                            <h2 class="apllication__title">
+                                У вас остались вопросы? <br> Оставьте заявку, мы вам поможем!
+                            </h2>
+                            <p class="apllication__subtitle">
+                                У нас есть решения для всех ваших потребностей в сфере защиты и регистрации
+                                интеллектуальной собственности
+                            </p>
+                            <button class="apllication__btn hover-btn" data-consultaion-btn>
+                                <div class="btn-hover"></div>
+                                Оставить заявку на консультацию
+                            </button>
+                        </div>
+                        <div class="apllication__pic" data-aos="fade-left" data-aos-duration="3000">
+                            <img src="assets/img/decor-1.png" width="350" height="331" alt="decor" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__top">
+                        <div class="footer__pic">
+                            <a class="footer__pic-logo" href="index.html">
+                                <img class="footer__logo" src="assets/img/logo-footer.png" width="209" height="47" alt="logo" loading="lazy">
+                            </a>
+                        </div>
+                        <p class="footer__text">
+                            Общество сограниченной
+                            ответственностью «Центр интеллектуальной собственности и инноваций „АйПиХаб“»
+                        </p>
+                        <address class="footer__address">
+                            <p class="footer__info">
+                                123317, г. Москва, Пресненская наб., д. <br>
+                                8, стр. 1, эт. 3, п. 1, оф. 10
+                            </p>
+                            <p class="footer__index-1">
+                                <span class="footer__span">
+                                    ИНН:
+                                </span>
+                                7703472433
+                            </p>
+                            <p class="footer__index-2">
+                                <span class="footer__span">
+                                    КПП:
+                                </span>
+                                770301001
+                            </p>
+                        </address>
+                    </div>
+                    <div class="footer__center">
+                        <div class="footer__menu">
+                            <h5 class="footer__title">
+                                Навигация по сайту:
+                            </h5>
+                            <nav class="menu">
+                                <ul class="menu__list menu__vertical">
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="services.html">
+                                            Услуги
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="case.html">
+                                            Кейсы
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="faq.html">
+                                            FAQ
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="footer__contacts">
+                            <h5 class="footer__title">
+                                Наши контакты:
+                            </h5>
+                            <ul class="footer__contacts-list">
+                                <li class="footer__contacts-item">
+                                    <a class="footer__contacts-link" href="mailto:example@iphub.com">
+                                        example@iphub.com
+                                    </a>
+                                </li>
+                                <li class="footer__contacts-item">
+                                    <a class="footer__contacts-link" href="tel:+78888888888">
+                                        +7 (888) 888 88 88
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__social">
+                            <h5 class="footer__title">
+                                Мы в соцсетях:
+                            </h5>
+                            <ul class="footer__social-list">
+                                <li class="footer__social-item">
+                                    <a class="footer__social-link" href="404.html">
+                                        Facebook
+                                    </a>
+                                </li>
+                                <li class="footer__social-item">
+                                    <a class="footer__social-link" href="404.html">
+                                        Instagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__place">
+                            <h5 class="footer__title">
+                                Как добраться:
+                            </h5>
+                            <p class="footer__cart">
+                                <a class="footer__cart-link" href="404.html">
+                                    Схема проезда
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="footer__bottom">
+                        <p class="footer__copyright">
+                            © 2021 IPhub. Все права защищены.
+                        </p>
+                        <p class="footer__subtext">
+                            Публичная оферта
+                        </p>
+                        <p class="footer__subtext">
+                            Пользовательское соглашение
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="modal" data-js-modal>
+        <div class="modal__inner">
+            <h3 class="modal__title">
+                Оставьте заявку
+            </h3>
+            <p class="modal__subtitle">
+                Укажите свои данные, и наш специалист свяжется с вами
+            </p>
+            <form class="modal__form">
+                <label class="modal__label-name" for="name">
+                    Как к вам обращаться
+                    <input class="modal__input-name" id="name" type="text" name="name" required>
+                </label>
+                <label class="modal__label-phone" for="phone">
+                    Номер телефона / WhatsApp
+                    <input class="modal__input-phone" id="phone" type="text" name="phone" data-js-phone required>
+                </label>
+                <label class="modal__label-mail" for="mail">
+                    Почта
+                    <input class="modal__input-mail" id="mail" type="text" name="mail" required>
+                </label>
+                <label class="modal__label-textarea" for="textarea">
+                    Запрос
+                    <textarea class="modal__textarea" id="textarea" name="message"></textarea>
+                </label>
+                <label class="modal__label-checkbox" for="checkbox">
+                    <input class="modal__checkbox" type="checkbox" id="checkbox">
+                    <span class="check-style"></span>
+                    <p class="modal__checkbox-text">
+                        Я принимаю соглашение на обработку персональных данных и политику конфиденциальности
+                    </p>
+                </label>
+                <button class="modal__btn btn-red" data-js-btn>
+                    Отправить
+                </button>
+            </form>
+            <img class="modal__close" src="assets/img/close.png" alt="close" data-js-modal-close>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

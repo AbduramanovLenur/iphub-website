@@ -1,0 +1,90 @@
+@import 'mixin';
+
+.process {
+    background-color: var(--black);
+    padding-top: 160px;
+    padding-bottom: 80px;
+    &__title {
+        @include title(#fff);
+        margin-bottom: 3px;
+        max-width: 400px;
+    }
+    &__subtitle {
+        font-weight: 500;
+        color: var(--grey);
+        max-width: 701px;
+        margin-bottom: 50px;
+    }
+    &__stages {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 56px;
+        gap: 10px;
+    }
+    &__box {
+        &-content {
+            display: flex;
+            gap: 56px;
+        }
+        &-text {
+            font-weight: 500;
+            color: var(--grey);
+            max-width: 216px;
+            @include transition(0.5s);
+            cursor: pointer;
+
+            &:hover {
+                color: #ff0000;
+            }
+        }
+    }
+    &__descr {
+        &-title {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 1.61;
+            margin-bottom: 8px;
+            max-width: 400px;
+        }
+        &-list {
+            margin-bottom: 16px;
+        }
+        &-item {
+            &:not(:last-child) {
+                margin-bottom: 5px;
+            }
+        }
+        &-text {
+            color: var(--grey);
+            max-width: 701px;
+            margin-left: 20px;
+        }
+    }
+}
+@media (max-width: 960px) {
+    .process {
+        padding-top: 100px;
+       &__stages {
+           justify-content: center;
+           gap: 20px;
+       } 
+    }
+}
+@media (max-width: 768px) {
+    .process {
+        padding-bottom: 40px;
+        &__title {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .process {
+        padding-top: 80px;
+        &__title {
+            font-size: 28px;
+        }
+    }
+}

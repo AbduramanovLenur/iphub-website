@@ -1,0 +1,193 @@
+@import "mixin";
+
+.modal {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: hsla(0, 0%, 0%, 0.8);
+    padding: 0 20px;
+    z-index: 40;
+    @include transition(0.5s);
+    &.is-active {
+        top: 0;
+        opacity: 1;
+        visibility: visible;
+    }
+    &__inner {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--dark);
+        max-width: 510px;
+        padding: 45px 65px;
+        border-radius: 10px;
+    }
+    &__close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+    &__title {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 1.58;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+    &__subtitle {
+        color: var(--grey);
+        text-align: center;
+        margin-bottom: 28px;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+    &__label {
+        &-name,
+        &-phone,
+        &-mail,
+        &-textarea {
+            font-size: 14px;
+            line-height: 1.64;
+            color: var(--grey);
+        }
+        &-name,
+        &-phone,
+        &-mail {
+            margin-bottom: 2px;
+        }
+        &-textarea {
+            font-weight: 500;
+            margin-bottom: 7px;
+        }
+        &-checkbox {
+            margin-bottom: 30px;
+        }
+    }
+    &__input {
+        &-name,
+        &-phone,
+        &-mail {
+            display: block;
+            background-color: rgba(138, 138, 138, 0.15);
+            border-radius: 8px;
+            width: 100%;
+            height: 40px;
+            margin-bottom: 15px;
+            padding: 7px 15px;
+            color: var(--white);
+        }
+    }
+    &__textarea {
+        display: block;
+        background-color: rgba(138, 138, 138, 0.15);
+        border-radius: 8px;
+        width: 100%;
+        padding: 7px 15px;
+        color: var(--white);
+        resize: none;
+        height: 147px;
+        margin-bottom: 15px;
+    }
+    &__checkbox {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        &:checked + .check-style::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 8px;
+            height: 8px;
+            background-color: #8a8a8a;
+        }
+        &:disabled + .check-style {
+            border-color: #ccc;
+        }
+        &:checked:disabled + .check-style {
+            border-color: #ccc;
+        }
+        &-text {
+            padding-left: 26px;
+        }
+    }
+    &__btn {
+        display: flex;
+        justify-content: center;
+        width: 154px;
+        margin: 0 auto;
+    }
+}
+.check-style {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #8a8a8a;
+    border-radius: 2px;
+    margin-top: 5px;
+}
+@media (max-width: 1024px) {
+    .modal {
+        &__inner {
+            padding: 30px 40px;
+        }
+        &__subtitle {
+            margin-bottom: 15px;
+        }
+        &__input {
+            &-name,
+            &-phone,
+            &-mail {
+                margin-bottom: 7px;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .modal {
+        &__textarea {
+            height: 100px;
+        }
+    }
+}
+@media (max-width: 600px) {
+    .modal {
+        &__inner {
+            padding: 30px;
+        }
+        &__subtitle {
+            font-size: 14px;
+        }
+        &__label-checkbox {
+            margin-bottom: 15px;
+        }
+        &__checkbox-text {
+            font-size: 14px;
+        }
+    }
+}
+@media (max-width: 540px) {
+    .modal {
+        &__title {
+            font-size: 18px;
+        }
+        &__subtitle {
+            margin-bottom: 10px;
+        }
+    }
+}

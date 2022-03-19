@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>IPhub</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="logo-pic">
+                        <a class="logo-href" href="index.html">
+                            <img class="logo" src="assets/img/logo.svg" width="129" height="29" alt="logo"
+                                loading="lazy">
+                        </a>
+                    </div>
+                    <div class="header__info">
+                        <a href="tel:+78888888888" class="header__tel">+7 (888) 888 88 88</a>
+                        <button class="header__consultation" data-consultaion-btn>
+                            Получить консультацию
+                        </button>
+                    </div>
+                    <nav class="menu menu-hide">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a class="menu__link" href="services.html">
+                                    Услуги
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="case.html">
+                                    Кейсы
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="faq.html">
+                                    FAQ
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="hamburger">
+            <div class="hamburger__inner">
+                <div class="hamburger__box">
+                    <ul class="hamburger__menu">
+                        <li class="hamburger__menu-item">
+                            <a class="hamburger__menu-link" href="services.html">
+                                Услуги
+                            </a>
+                        </li>
+                        <li class="hamburger__menu-item">
+                            <a class="hamburger__menu-link" href="case.html">
+                                Кейсы
+                            </a>
+                        </li>
+                        <li class="hamburger__menu-item">
+                            <a class="hamburger__menu-link" href="faq.html">
+                                FAQ
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hamburger__box">
+                    <h4 class="hamburger__title">
+                        Наши контакты:
+                    </h4>
+                    <ul class="hamburger__list">
+                        <li class="hamburger__item">
+                            <a href="mailto:example@iphub.com" class="hamburger__link">
+                                example@iphub.com
+                            </a>
+                        </li>
+                        <li class="hamburger__item">
+                            <a href="tel:+78888888888" class="hamburger__tel">
+                                +7 (888) 888 88 88
+                            </a>
+                        </li>
+                    </ul>
+                    <h4 class="hamburger__title">
+                        Мы в соцсетях:
+                    </h4>
+                    <ul class="hamburger__socials">
+                        <li class="hamburger__social">
+                            <a href="#" class="hamburger__social-link">
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="hamburger__social">
+                            <a href="#" class="hamburger__social-link">
+                                Instagram
+                            </a>
+                        </li>
+                    </ul>
+                    <h4 class="hamburger__title">
+                        Как добраться:
+                    </h4>
+                    <address class="hamburger__address">
+                        <p class="hamburger__info">
+                            123317, г. Москва, Пресненская наб., д. <br>
+                            8, стр. 1, эт. 3, п. 1, оф. 10
+                        </p>
+                        <p class="hamburger__index-1">
+                            ИНН: 7703472433
+                        </p>
+                        <p class="hamburger__index-2">
+                            КПП: 770301001
+                        </p>
+                    </address>
+                    <div class="hamburger__pic">
+                        <img class="hamburger__img" src="assets/img/hamburger-img.png" width="270" height="299"
+                            alt="pic" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="breadcrumb">
+            <div class="container">
+                <ul class="breadcrumb__list">
+                    <li class="breadcrumb__item">
+                        <a class="breadcrumb__arrow-link" href="services.html">
+                            <img src="assets/img/breadcrumb-arrow.png" width="26" height="8" alt="arrow" loading="lazy">
+                        </a>
+                    </li>
+                    <li class="breadcrumb__item breadcrumb__decor breadcrumb__hide">
+                        <a class="breadcrumb__link" href="index.html">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="breadcrumb__item breadcrumb__decor breadcrumb__hide">
+                        <a class="breadcrumb__link" href="case.html">
+                            Все кейсы
+                        </a>
+                    </li>
+                    <li class="breadcrumb__item">
+                        <span class="breadcrumb__active-page">
+                            Регистрация товарного знака для бренда CIRKLE
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <main class="main">
+            <section class="reg-mark">
+                <div class="container">
+                    <div class="reg-mark__inner">
+                        <div class="reg-mark__content">
+                            <p class="reg-mark__overheadtitle">
+                                ТОВАРНЫЙ ЗНАК
+                            </p>
+                            <h2 class="reg-mark__title">
+                                Регистрация товарного знака для компании CIRKLE
+                            </h2>
+                            <p class="reg-mark__subtitle">
+                                Был зарегистрирован товарный знак в отношении косметических товаров.
+                            </p>
+                        </div>
+                        <div class="reg-mark__pic">
+                            <img src="assets/img/circle.svg" width="196" height="39" alt="circle" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="info-companie">
+                <div class="container">
+                    <div class="info-companie__inner">
+                        <div class="info-companie__box">
+                            <div class="info-companie__pic" data-aos="fade-up-right" data-aos-duration="2000">
+                                <a href="assets/img/decor-3.png" data-fancybox="gallery" data-width="840"
+                                    data-height="680">
+                                    <img src="assets/img/decor-3.png" width="365" height="461" alt="decor"
+                                        loading="lazy">
+                                </a>
+                            </div>
+                            <div class="info-companie__content">
+                                <h3 class="info-companie__descr-title">
+                                    О компании
+                                </h3>
+                                <p class="info-companie__descr-text margin-bottom-16">
+                                    CIRKLE – магазин косметических товаров и производитель продукции.
+                                </p>
+                                <div class="info-companie__descr-pic">
+                                    <a href="assets/img/info-companie.jpg" data-fancybox="gallery" data-width="840"
+                                        data-height="680">
+                                        <img src="assets/img/info-companie.jpg" width="700" height="494" alt="pic"
+                                            loading="lazy">
+                                    </a>
+                                </div>
+                                <h3 class="info-companie__task-title" data-aos="fade-right" data-aos-duration="2000">
+                                    Задачи
+                                </h3>
+                                <ul class="info-companie__task-list" data-aos="fade-right" data-aos-duration="2000">
+                                    <li class="info-companie__task-item">
+                                        <p class="info-companie__task-text">
+                                            - Подготовка и подача заявки для регистрации товарного знака.
+                                        </p>
+                                    </li>
+                                    <li class="info-companie__task-item">
+                                        <p class="info-companie__task-text">
+                                            - Подготовка ответа на уведомление для снятия доводов для отказа
+                                            в регистрации
+                                            товарного знака.
+                                        </p>
+                                    </li>
+                                    <li class="info-companie__task-item">
+                                        <p class="info-companie__task-text">
+                                            - Получение Свидетельства на товарный.
+                                        </p>
+                                    </li>
+                                </ul>
+                                <div class="swiper swiper-info-companie-task">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide" data-aos="flip-up" data-aos-duration="2000">
+                                            <div class="info-companie-slide-pic">
+                                                <a href="assets/img/task-pic-1.jpg" data-fancybox="gallery"
+                                                    data-width="840" data-height="680">
+                                                    <img src="assets/img/task-pic-1.jpg" width="335" height="335"
+                                                        alt="pic" loading="lazy">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" data-aos="flip-up" data-aos-duration="2000">
+                                            <div class="info-companie-slide-pic">
+                                                <a href="assets/img/task-pic-2.jpg" data-fancybox="gallery"
+                                                    data-width="840" data-height="680">
+                                                    <img src="assets/img/task-pic-2.jpg" width="335" height="335"
+                                                        alt="pic" loading="lazy">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" data-aos="flip-up" data-aos-duration="2000">
+                                            <div class="info-companie-slide-pic">
+                                                <a href="assets/img/task-pic-1.jpg" data-fancybox="gallery"
+                                                    data-width="840" data-height="680">
+                                                    <img src="assets/img/task-pic-1.jpg" width="335" height="335"
+                                                        alt="pic" loading="lazy">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" data-aos="flip-up" data-aos-duration="2000">
+                                            <div class="info-companie-slide-pic">
+                                                <a href="assets/img/task-pic-2.jpg" data-fancybox="gallery"
+                                                    data-width="840" data-height="680">
+                                                    <img src="assets/img/task-pic-2.jpg" width="335" height="335"
+                                                        alt="pic" loading="lazy">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" data-aos="flip-up" data-aos-duration="2000">
+                                            <div class="info-companie-slide-pic">
+                                                <a href="assets/img/task-pic-1.jpg" data-fancybox="gallery"
+                                                    data-width="840" data-height="680">
+                                                    <img src="assets/img/task-pic-1.jpg" width="335" height="335"
+                                                        alt="pic" loading="lazy">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" data-aos="flip-up" data-aos-duration="2000">
+                                            <div class="info-companie-slide-pic">
+                                                <a href="assets/img/task-pic-2.jpg" data-fancybox="gallery"
+                                                    data-width="840" data-height="680">
+                                                    <img src="assets/img/task-pic-2.jpg" width="335" height="335"
+                                                        alt="pic" loading="lazy">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" data-aos="flip-up" data-aos-duration="2000">
+                                            <div class="info-companie-slide-pic">
+                                                <a href="assets/img/task-pic-1.jpg" data-fancybox="gallery"
+                                                    data-width="840" data-height="680">
+                                                    <img src="assets/img/task-pic-1.jpg" width="335" height="335"
+                                                        alt="pic" loading="lazy">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" data-aos="flip-up" data-aos-duration="2000">
+                                            <div class="info-companie-slide-pic">
+                                                <a href="assets/img/task-pic-2.jpg" data-fancybox="gallery"
+                                                    data-width="840" data-height="680">
+                                                    <img src="assets/img/task-pic-2.jpg" width="335" height="335"
+                                                        alt="pic" loading="lazy">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-prev info-companie-task-prev" data-aos="fade-right"
+                                        data-aos-duration="2000"></div>
+                                    <div class="swiper-button-next info-companie-task-next" data-aos="fade-left"
+                                        data-aos-duration="2000"></div>
+                                </div>
+                                <h3 class="info-companie__solution-title" data-aos="fade-right"
+                                    data-aos-duration="2000">
+                                    Решение
+                                </h3>
+                                <p class="info-companie__solution-text margin-bottom-50" data-aos="fade-right"
+                                    data-aos-duration="2000">
+                                    По оценке экспертизы выявлено основание для отказа, так как были противопоставлены
+                                    7 товарных знаков, которые были признаны сходными до степени смешения.
+                                    <br>
+                                    <br>
+                                    Нами было доказано, что у потребителя не возникнет смешения брендов,
+                                    так как деятельность заявителя и правообладателей знаков не пересекается и относится
+                                    к другим сферам.
+                                    <br>
+                                    <br>
+                                    Товарный знак был зарегистрированы в отношении косметических товаров и услуг
+                                    магазина
+                                    косметики.
+                                </p>
+                                <h3 class="info-companie__result-title" data-aos="fade-right" data-aos-duration="3000">
+                                    Результат
+                                </h3>
+                                <ul class="info-companie__result-list" data-aos="fade-right" data-aos-duration="3000">
+                                    <li class="info-companie__result-item">
+                                        <p class="info-companie__result-text">
+                                            - Успешная регистрация товарного знака за 10 месяцев.
+                                        </p>
+                                    </li>
+                                    <li class="info-companie__result-item">
+                                        <p class="info-companie__result-text">
+                                            - Номер заявки — 2020702165.
+                                        </p>
+                                    </li>
+                                    <li class="info-companie__result-item">
+                                        <p class="info-companie__result-text">
+                                            - Номер государственной регистрации — 787439.
+                                        </p>
+                                    </li>
+                                </ul>
+                                <div class="swiper swiper-info-companie-result">
+                                    <div class="swiper-wrapper swiper-info-companie-result">
+                                        <div class="swiper-slide" data-aos="flip-up" data-aos-duration="2000">
+                                            <div class="info-companie-slide-pic">
+                                                <a href="assets/img/certificate.jpg" data-fancybox="gallery"
+                                                    data-width="840" data-height="680">
+                                                    <img src="assets/img/certificate.jpg" width="335" height="464"
+                                                        alt="pic" loading="lazy">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" data-aos="flip-up" data-aos-duration="2000">
+                                            <div class="info-companie-slide-pic">
+                                                <a href="assets/img/certificate.jpg" data-fancybox="gallery"
+                                                    data-width="840" data-height="680">
+                                                    <img src="assets/img/certificate.jpg" width="335" height="464"
+                                                        alt="pic" loading="lazy">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" data-aos="flip-up" data-aos-duration="2000">
+                                            <div class="info-companie-slide-pic">
+                                                <a href="assets/img/certificate.jpg" data-fancybox="gallery"
+                                                    data-width="840" data-height="680">
+                                                    <img src="assets/img/certificate.jpg" width="335" height="464"
+                                                        alt="pic" loading="lazy">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" data-aos="flip-up" data-aos-duration="2000">
+                                            <div class="info-companie-slide-pic">
+                                                <a href="assets/img/certificate.jpg" data-fancybox="gallery"
+                                                    data-width="840" data-height="680">
+                                                    <img src="assets/img/certificate.jpg" width="335" height="464"
+                                                        alt="pic" loading="lazy">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" data-aos="flip-up" data-aos-duration="2000">
+                                            <div class="info-companie-slide-pic">
+                                                <a href="assets/img/certificate.jpg" data-fancybox="gallery"
+                                                    data-width="840" data-height="680">
+                                                    <img src="assets/img/certificate.jpg" width="335" height="464"
+                                                        alt="pic" loading="lazy">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" data-aos="flip-up" data-aos-duration="2000">
+                                            <div class="info-companie-slide-pic">
+                                                <a href="assets/img/certificate.jpg" data-fancybox="gallery"
+                                                    data-width="840" data-height="680">
+                                                    <img src="assets/img/certificate.jpg" width="335" height="464"
+                                                        alt="pic" loading="lazy">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" data-aos="flip-up" data-aos-duration="2000">
+                                            <div class="info-companie-slide-pic">
+                                                <a href="assets/img/certificate.jpg" data-fancybox="gallery"
+                                                    data-width="840" data-height="680">
+                                                    <img src="assets/img/certificate.jpg" width="335" height="464"
+                                                        alt="pic" loading="lazy">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" data-aos="flip-up" data-aos-duration="2000">
+                                            <div class="info-companie-slide-pic">
+                                                <a href="assets/img/certificate.jpg" data-fancybox="gallery"
+                                                    data-width="840" data-height="680">
+                                                    <img src="assets/img/certificate.jpg" width="335" height="464"
+                                                        alt="pic" loading="lazy">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-prev info-companie-result-prev"></div>
+                                    <div class="swiper-button-next info-companie-result-next"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="case">
+                            <div class="container">
+                                <div class="case__inner">
+                                    <h2 class="case__title">
+                                        Схожие кейсы
+                                    </h2>
+                                    <div class="case__content">
+                                        <p class="case__text">
+                                            Наши реальные истории о том, как мы помогали своим клиентам регистрировать
+                                            товарные
+                                            знаки и оформлять права на объекты интеллектуальной собственности
+                                        </p>
+                                        <a class="case__btn btn-red" href="case.html">
+                                            Все кейсы
+                                        </a>
+                                    </div>
+                                    <div class="swiper swiper-case">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide case-slide">
+                                                <div class="case__box">
+                                                    <a href="reg-mark.html">
+                                                        <div class="case__pic">
+                                                            <img src="assets/img/circle.svg" width="187" height="37"
+                                                                alt="pic" loading="lazy">
+                                                        </div>
+                                                        <div class="case__wrapper">
+                                                            <h3 class="case__wrapper-title">
+                                                                CIRKLE — производитель косметической продукции
+                                                            </h3>
+                                                            <p class="case__wrapper-text">
+                                                                Как в результате защиты мы зарегистрировали бренд
+                                                                российской
+                                                                косметики
+                                                                при наличии оснований для отказа
+                                                            </p>
+                                                            <img class="case__shape" src="assets/img/shape.svg"
+                                                                width="20" height="20" alt="shape" loading="lazy">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide case-slide">
+                                                <div class="case__box">
+                                                    <a href="reg-mark.html">
+                                                        <div class="case__pic">
+                                                            <img src="assets/img/camera.svg" width="187" height="37"
+                                                                alt="pic" loading="lazy">
+                                                        </div>
+                                                        <div class="case__wrapper">
+                                                            <h3 class="case__wrapper-title">
+                                                                Camera IQ — производитель систем машинного зрения
+                                                            </h3>
+                                                            <p class="case__wrapper-text">
+                                                                Защита прав после ребрендинга. Как провести успешную
+                                                                регистрацию
+                                                            </p>
+                                                            <img class="case__shape" src="assets/img/shape.svg"
+                                                                width="20" height="20" alt="shape" loading="lazy">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide case-slide">
+                                                <div class="case__box">
+                                                    <a href="reg-mark.html">
+                                                        <div class="case__pic">
+                                                            <img src="assets/img/hands.svg" width="187" height="37"
+                                                                alt="pic" loading="lazy">
+                                                        </div>
+                                                        <div class="case__wrapper">
+                                                            <h3 class="case__wrapper-title">
+                                                                HANDS — производитель строительных материалов
+                                                            </h3>
+                                                            <p class="case__wrapper-text">
+                                                                Предварительный отказ — не приговор! Как мы защищали
+                                                                монополию
+                                                                российского
+                                                                производителя строительных материалов.
+                                                            </p>
+                                                            <img class="case__shape" src="assets/img/shape.svg"
+                                                                width="20" height="20" alt="shape" loading="lazy">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide case-slide">
+                                                <div class="case__box">
+                                                    <a href="reg-mark.html">
+                                                        <div class="case__pic">
+                                                            <img src="assets/img/circle.svg" width="187" height="37"
+                                                                alt="pic" loading="lazy">
+                                                        </div>
+                                                        <div class="case__wrapper">
+                                                            <h3 class="case__wrapper-title">
+                                                                CIRKLE — производитель косметической продукции
+                                                            </h3>
+                                                            <p class="case__wrapper-text">
+                                                                Как в результате защиты мы зарегистрировали бренд
+                                                                российской
+                                                                косметики
+                                                                при наличии оснований для отказа
+                                                            </p>
+                                                            <img class="case__shape" src="assets/img/shape.svg"
+                                                                width="20" height="20" alt="shape" loading="lazy">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide case-slide">
+                                                <div class="case__box">
+                                                    <a href="reg-mark.html">
+                                                        <div class="case__pic">
+                                                            <img src="assets/img/camera.svg" width="187" height="37"
+                                                                alt="pic" loading="lazy">
+                                                        </div>
+                                                        <div class="case__wrapper">
+                                                            <h3 class="case__wrapper-title">
+                                                                Camera IQ — производитель систем машинного зрения
+                                                            </h3>
+                                                            <p class="case__wrapper-text">
+                                                                Защита прав после ребрендинга. Как провести успешную
+                                                                регистрацию
+                                                            </p>
+                                                            <img class="case__shape" src="assets/img/shape.svg"
+                                                                width="20" height="20" alt="shape" loading="lazy">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide case-slide">
+                                                <div class="case__box">
+                                                    <a href="reg-mark.html">
+                                                        <div class="case__pic">
+                                                            <img src="assets/img/hands.svg" width="187" height="37"
+                                                                alt="pic" loading="lazy">
+                                                        </div>
+                                                        <div class="case__wrapper">
+                                                            <h3 class="case__wrapper-title">
+                                                                HANDS — производитель строительных материалов
+                                                            </h3>
+                                                            <p class="case__wrapper-text">
+                                                                Предварительный отказ — не приговор! Как мы защищали
+                                                                монополию
+                                                                российского
+                                                                производителя строительных материалов.
+                                                            </p>
+                                                            <img class="case__shape" src="assets/img/shape.svg"
+                                                                width="20" height="20" alt="shape" loading="lazy">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-button-prev case-button-prev"></div>
+                                        <div class="swiper-button-next case-button-next"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="apllication section-padding">
+                <div class="container">
+                    <div class="apllication__inner">
+                        <div class="apllication__content" data-aos="fade-right" data-aos-duration="3000">
+                            <h2 class="apllication__title">
+                                Оставьте заявку на консультацию и мы вам поможем!
+                            </h2>
+                            <p class="apllication__subtitle">
+                                У нас есть решения для всех ваших потребностей в сфере защиты и регистрации
+                                интеллектуальной собственности
+                            </p>
+                            <button class="apllication__btn hover-btn" data-consultaion-btn>
+                                <div class="btn-hover"></div>
+                                Получить индивидуальную консультацию
+                            </button>
+                        </div>
+                        <div class="apllication__pic" data-aos="fade-left" data-aos-duration="3000">
+                            <img src="assets/img/reg-mark-decor.png" width="323" height="287" alt="decor"
+                                loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__top">
+                        <div class="footer__pic">
+                            <a class="footer__pic-logo" href="index.html">
+                                <img class="footer__logo" src="assets/img/logo-footer.png" width="209" height="45"
+                                    alt="logo" loading="lazy">
+                            </a>
+                        </div>
+                        <p class="footer__text">
+                            Общество сограниченной
+                            ответственностью «Центр интеллектуальной собственности и инноваций „АйПиХаб“»
+                        </p>
+                        <address class="footer__address">
+                            <p class="footer__info">
+                                123317, г. Москва, Пресненская наб., д. <br>
+                                8, стр. 1, эт. 3, п. 1, оф. 10
+                            </p>
+                            <p class="footer__index-1">
+                                <span class="footer__span">
+                                    ИНН:
+                                </span>
+                                7703472433
+                            </p>
+                            <p class="footer__index-2">
+                                <span class="footer__span">
+                                    КПП:
+                                </span>
+                                770301001
+                            </p>
+                        </address>
+                    </div>
+                    <div class="footer__center">
+                        <div class="footer__menu">
+                            <h5 class="footer__title">
+                                Навигация по сайту:
+                            </h5>
+                            <nav class="menu">
+                                <ul class="menu__list menu__vertical">
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="services.html">
+                                            Услуги
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="case.html">
+                                            Кейсы
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="faq.html">
+                                            FAQ
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="footer__contacts">
+                            <h5 class="footer__title">
+                                Наши контакты:
+                            </h5>
+                            <ul class="footer__contacts-list">
+                                <li class="footer__contacts-item">
+                                    <a class="footer__contacts-link" href="mailto:example@iphub.com">
+                                        example@iphub.com
+                                    </a>
+                                </li>
+                                <li class="footer__contacts-item">
+                                    <a class="footer__contacts-link" href="tel:+78888888888">
+                                        +7 (888) 888 88 88
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__social">
+                            <h5 class="footer__title">
+                                Мы в соцсетях:
+                            </h5>
+                            <ul class="footer__social-list">
+                                <li class="footer__social-item">
+                                    <a class="footer__social-link" href="404.html">
+                                        Facebook
+                                    </a>
+                                </li>
+                                <li class="footer__social-item">
+                                    <a class="footer__social-link" href="404.html">
+                                        Instagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__place">
+                            <h5 class="footer__title">
+                                Как добраться:
+                            </h5>
+                            <p class="footer__cart">
+                                <a class="footer__cart-link" href="404.html">
+                                    Схема проезда
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="footer__bottom">
+                        <p class="footer__copyright">
+                            © 2021 IPhub. Все права защищены.
+                        </p>
+                        <p class="footer__subtext">
+                            Публичная оферта
+                        </p>
+                        <p class="footer__subtext">
+                            Пользовательское соглашение
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="modal" data-js-modal>
+        <div class="modal__inner">
+            <h3 class="modal__title">
+                Оставьте заявку
+            </h3>
+            <p class="modal__subtitle">
+                Укажите свои данные, и наш специалист свяжется с вами
+            </p>
+            <form class="modal__form">
+                <label class="modal__label-name" for="name">
+                    Как к вам обращаться
+                    <input class="modal__input-name" id="name" type="text" name="name" required>
+                </label>
+                <label class="modal__label-phone" for="phone">
+                    Номер телефона / WhatsApp
+                    <input class="modal__input-phone" id="phone" type="text" name="phone" data-js-phone required>
+                </label>
+                <label class="modal__label-mail" for="mail">
+                    Почта
+                    <input class="modal__input-mail" id="mail" type="text" name="mail" required>
+                </label>
+                <label class="modal__label-textarea" for="textarea">
+                    Запрос
+                    <textarea class="modal__textarea" id="textarea" name="message"></textarea>
+                </label>
+                <label class="modal__label-checkbox" for="checkbox">
+                    <input class="modal__checkbox" type="checkbox" id="checkbox">
+                    <span class="check-style"></span>
+                    <p class="modal__checkbox-text">
+                        Я принимаю соглашение на обработку персональных данных и политику конфиденциальности
+                    </p>
+                </label>
+                <button class="modal__btn btn-red" data-js-btn>
+                    Отправить
+                </button>
+            </form>
+            <img class="modal__close" src="assets/img/close.png" alt="close" data-js-modal-close>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

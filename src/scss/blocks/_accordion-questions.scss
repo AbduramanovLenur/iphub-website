@@ -1,0 +1,99 @@
+@import "mixin";
+
+.accordion-questions {
+    background-color: var(--black);
+    padding-top: 80px;
+    padding-bottom: 160px;
+    &__title {
+        @include title(#fff);
+        margin-bottom: 50px;
+    }
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        padding: 18px 20px;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 8px;
+        margin-bottom: 20px;
+        z-index: 20;
+        cursor: pointer;
+        @include transition(1s);
+        &.is-active {
+            background: rgba(255, 255, 255, 0.15);
+        }
+        &.is-active p {
+            color: #fff;
+        }
+    }
+    &__question {
+        font-size: 18px;
+        line-height: 1.61;
+        color: #8a8a8a;
+        cursor: pointer; 
+        @include transition(1s);
+    }
+    &__pic {
+        flex-shrink: 0;
+        cursor: pointer;
+    }
+    &__content {
+        max-height: 0;
+        opacity: 0;
+        visibility: hidden;
+        margin-bottom: 15px;
+        @include transition(1s);
+        &.is-active {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    &__list {
+        margin-bottom: 30px;
+    }
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+    &__descr,
+    &__text {
+        color: var(--grey);
+        @include transition(1s);
+    }
+}
+
+@media (max-width: 800px) {
+    .accordion-questions {
+        padding-top: 40px;
+        padding-bottom: 80px;
+        &__title {
+            margin-bottom: 30px;
+        }
+        &__box {
+            padding: 15px;
+        }
+        &__question {
+            font-size: 16px;
+        }
+    }
+}
+@media (max-width: 640px) {
+    .accordion-questions {
+        &__title {
+            font-size: 32px;
+        }
+    }
+}
+@media (max-width: 480px) {
+    .accordion-questions {
+        padding-bottom: 40px;
+        &__title {
+            font-size: 28px;
+        }
+        &__question {
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,98 @@
+@import "mixin";
+
+.case {
+    background-color: var(--black);
+    &__title {
+        @include title(#fff);
+        margin-bottom: 16px;
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+    &__text {
+        max-width: 707px;
+        color: var(--grey);
+    }
+    &__btn {
+        max-width: 135px;
+        width: 100%;
+    }
+    &__box {
+        display: flex;
+        max-width: 598px;
+        height: 289px;
+    }
+    &__pic {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 125px 45px;
+        background-color: #ffffff0d;
+        max-width: 289px;
+    }
+    &__wrapper {
+        position: relative;
+        background-color: #1b1818;
+        padding: 75px 20px;
+        max-width: 309px;
+        &-title {
+            font-weight: 500;
+            max-width: 269px;
+            margin-bottom: 5px;
+            cursor: pointer;
+        }
+        &-text {
+            font-size: 14px;
+            line-height: 1.64;
+            color: var(--grey);
+            cursor: pointer;
+        }
+    }
+    &__shape {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 960px) {
+    .case {
+        &__text {
+            margin-bottom: 20px;
+        }
+        &__content {
+            flex-direction: column;
+        }
+    }
+}
+@media (max-width: 600px) {
+    .case {
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 45px 20px;
+            &-title {
+                font-size: 14px;
+            }
+            &-text {
+                font-size: 13px;
+            }
+        }
+    }
+}
+@media (max-width: 480px) {
+    .case {
+        &__wrapper {
+            max-width: 270px;
+            padding: 20px;
+        }
+        &__title {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+    }
+}

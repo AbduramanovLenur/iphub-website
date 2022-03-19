@@ -1,0 +1,65 @@
+@import "mixin";
+
+.faq {
+    &__box {
+        position: relative;
+        overflow: hidden;
+    }
+    &__questions {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 43px 20px 18px;
+        background-color: rgba(255, 255, 255, 0.05);
+        border-radius: 8px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        @include transition(1s);
+        &.is-active {
+            background-color: rgba(255, 255, 255, 0.15);
+        }
+        &.is-active p {
+            color: #fff;
+        }
+    }
+    &__text {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.61;
+        color: var(--grey);
+        max-width: 750px;
+        cursor: pointer;
+    }
+    &__pic {
+        flex-shrink: 0; 
+    }
+    &__content {
+        opacity: 0;
+        visibility: hidden;
+        max-height: 0;
+        margin-bottom: 10px;
+        @include transition(1s);
+        &.is-active {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    &__subtitle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 8px 0px;
+        padding: 5px 10px;
+        color: #ffffff;
+        opacity: 0.6;
+    }
+}
+
+@media (max-width: 600px) {
+    .faq {
+        &__text {
+            font-size: 16px;
+        }
+    }
+}

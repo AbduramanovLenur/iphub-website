@@ -1,0 +1,132 @@
+@import "mixin";
+
+.services-reg {
+    background-color: var(--black);
+    padding-top: 40px;
+    padding-bottom: 160px;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        margin-bottom: 50px;
+    }
+    &__title {
+        @include title(#fff);
+    }
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 154px;
+        width: 100%;
+        height: 32px;
+    }
+    &__box {
+        position: relative;
+        background-color: #ffffff0d;
+        border-radius: 8px;
+        padding: 81px 25px 20px;
+    }
+    &__pic {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 65px;
+        img {
+            object-fit: contain;
+        }
+    }
+    &__text {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.61;
+        color: var(--grey);
+        max-width: 239px;
+    }
+    &__subtitle {
+        &-1,
+        &-2 {
+            font-size: 14px;
+            position: absolute;
+            background-color: #ffffff0d;
+            color: var(--grey);
+            border-radius: 8px;
+            padding: 5px;
+        }
+        &-1 {
+            top: 0;
+            left: 0;
+        }
+        &-2 {
+            top: 0;
+            left: 135px;
+        }
+    }
+    &__shape {
+        position: absolute;
+        top: 14px;
+        right: 14px;
+    }
+}
+@media (max-width: 1050px) {
+    .services-reg {
+        &__text {
+            font-size: 16px;
+        }
+    }
+}
+@media (max-width: 864px) {
+    .services-reg {
+        &__content {
+            flex-direction: column;
+        }
+    }
+}
+@media (max-width: 810px) {
+    .services-reg {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        &__title {
+            margin-bottom: 32px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .services-reg {
+        &__pic {
+            img {
+                height: 120px;
+            }
+        }
+        &__title {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        &__text {
+            font-size: 14px;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .services-reg {
+        &__title {
+            font-size: 28px;
+        }
+        &__subtitle {
+            &-2 {
+                top: 42px;
+                left: 0;
+            }
+        }
+    }
+}
+@media (max-width: 480px) {
+    .services-reg {
+        &__subtitle {
+            &-2 {
+                top: 0;
+                left: 135px;
+            }
+        }
+    }
+}

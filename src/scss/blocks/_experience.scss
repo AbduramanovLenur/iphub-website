@@ -1,0 +1,131 @@
+@import "mixin";
+
+.experience {
+    background-color: var(--black);
+    padding-top: 70px;
+    padding-bottom: 163px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        gap: 48px;
+    }
+    &__content {
+        max-width: 804px;
+    }
+    &__title {
+        @include title(#fff);
+        margin-bottom: 16px;
+        max-width: 804px;
+    }
+    &__text {
+        color: var(--grey);
+        max-width: 804px;
+        margin-bottom: 50px;
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin-bottom: 100px;
+    }
+    &__item {
+        max-width: 392px;
+        min-height: 137px;
+        width: 100%;
+    }
+    &__box {
+        background-color: #ffffff0d;
+        padding: 20px;
+        height: 100%;
+        border-radius: 8px;
+        &-title {
+            font-family: "STIX Two Text", serif;
+            font-size: 36px;
+            font-weight: 500;
+            line-height: 1.25;
+            margin-bottom: 5px;
+        }
+        &-text {
+            color: var(--grey);
+            max-width: 290px;
+        }
+    }
+    &__companies {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    &__companie {
+        max-width: 392px;
+        &-box {
+            padding: 10px 61px;
+            background: #ffffff0d;
+            border-radius: 8px;
+        }
+    }
+}
+@media (max-width: 1050px) {
+    .experience {
+        &__inner {
+            justify-content: center;
+            gap: 0;
+        }
+        &__pic {
+            display: none;
+        }
+        &__list {
+            margin-bottom: 70px;
+        }
+    }
+}
+@media (max-width: 864px) {
+    .experience {
+        &__box {
+            padding: 15px;
+            &-title {
+                font-size: 27px;
+            }
+            &-text {
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .experience {
+        &__text {
+            margin-bottom: 30px;
+        }
+        &__list {
+            margin-bottom: 50px;
+        }
+        &__companies {
+            grid-template-columns: 1fr;
+        }
+        &__companie {
+            max-width: 100%;
+            &-box {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}
+@media (max-width: 480px) {
+    .experience {
+        &__list {
+            grid-template-columns: 1fr;
+        }
+        &__item {
+            max-width: 100%;
+            min-height: 100px;
+        }
+    }
+}
+@media (max-width: 480px) {
+    .experience {
+        &__title {
+            font-size: 28px;
+        }
+    }
+}
