@@ -21,9 +21,6 @@
     &__pic {
         display: flex;
         margin-bottom: 10px;
-        img {
-            object-fit: cover;
-        }
     }
     &__name {
         font-size: 18px;
@@ -170,7 +167,6 @@
             max-width: 479px;
             height: 531px;
             img {
-                object-fit: cover;
                 border-radius: 10px;
             }
         }

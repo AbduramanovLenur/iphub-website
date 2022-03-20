@@ -19,6 +19,7 @@
 }
 .img-wrapper {
     display: flex;
+    flex-shrink: 0;
 }
 .btn-red {
     position: relative;

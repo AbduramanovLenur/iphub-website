@@ -1,7 +1,7 @@
 const swiperSlider = (swiperSelector, objSwiper) => {
-    try {
-        new Swiper(swiperSelector, objSwiper);
-    } catch {}
+    const element = document.querySelector(swiperSelector);
+    if (!element) return;
+    new Swiper(element, objSwiper);
 };
 
 export default swiperSlider;

@@ -14,6 +14,7 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>IPhub</title>
 </head>
@@ -31,7 +32,7 @@
                     </div>
                     <div class="header__info">
                         <a href="tel:+78888888888" class="header__tel">+7 (888) 888 88 88</a>
-                        <button class="header__consultation" data-consultaion-btn>
+                        <button class="header__consultation" data-consultaion-btn type="button">
                             Получить консультацию
                         </button>
                     </div>
@@ -434,8 +435,8 @@
                                 </div>
                                 <div class="swiper-pagination questions-pagination"></div>
 
-                                <div class="swiper-button-prev questions-button-prev"></div>
-                                <div class="swiper-button-next questions-button-next"></div>
+                                <button class="swiper-button-prev questions-button-prev" type="button"></button>
+                                <button class="swiper-button-next questions-button-next" type="button"></button>
                             </div>
                         </div>
                         <h3 class="questions__bonus" data-aos="fade-down-right" data-aos-duration="1000">
@@ -711,7 +712,7 @@
                                 У нас есть решения для всех ваших потребностей в сфере защиты и регистрации
                                 интеллектуальной собственности
                             </p>
-                            <button class="apllication__btn hover-btn" data-consultaion-btn>
+                            <button class="apllication__btn hover-btn" data-consultaion-btn type="button">
                                 <div class="btn-hover"></div>
                                 Оставить заявку на консультацию
                             </button>
@@ -761,7 +762,7 @@
                                 Навигация по сайту:
                             </h5>
                             <nav class="menu">
-                                <ul class="menu__list menu__vertical">
+                                <ul class="menu__list menu--vertical">
                                     <li class="menu__item">
                                         <a class="menu__link" href="services.html">
                                             Услуги
@@ -872,7 +873,7 @@
                         Я принимаю соглашение на обработку персональных данных и политику конфиденциальности
                     </p>
                 </label>
-                <button class="modal__btn btn-red" data-js-btn>
+                <button class="modal__btn btn-red" data-js-btn type="button">
                     Отправить
                 </button>
             </form>

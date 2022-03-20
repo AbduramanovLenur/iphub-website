@@ -54,7 +54,6 @@
         img {
             width: 135px;
             height: 142px;
-            object-fit: cover;
             @include transition(0.5s);
         }
     }

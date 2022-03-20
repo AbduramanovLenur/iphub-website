@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=STIX+Two+Text:wght@400;500&display=swap");
-
+// @import 'blocks/fonts';
 * {
     box-sizing: border-box;
     padding: 0;
@@ -11,13 +10,14 @@
     --white: #ffffff;
     --red: #da4533;
     --black: #000;
-    --dark: #1B1B1B;
+    --dark: #1b1b1b;
     --dark-grey: #5c5c5c;
     --grid-padding: 15px;
 }
+
 body {
-    font-family: "Montserrat", sans-serif;
-    // font-family: "STIX Two Text", serif;
+    font-family: "Montserrat";
+    // font-family: "STIX Two Text";
     font-size: var(--default-text-size);
     font-weight: 400;
     line-height: 1.7;
@@ -32,6 +32,7 @@ li {
 }
 img {
     max-width: 100%;
+    height: auto;
 }
 a {
     font-size: inherit;

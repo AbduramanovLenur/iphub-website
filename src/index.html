@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>IPhub</title>
 </head>
@@ -33,7 +34,7 @@
                     </div>
                     <div class="header__info">
                         <a href="tel:+78888888888" class="header__tel">+7 (888) 888 88 88</a>
-                        <button class="header__consultation" data-consultaion-btn>
+                        <button class="header__consultation" data-consultaion-btn type="button">
                             Получить консультацию
                         </button>
                     </div>
@@ -433,10 +434,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-button-prev solution-button-prev" data-aos="fade-right"
-                                data-aos-duration="1000"></div>
-                            <div class="swiper-button-next solution-button-next" data-aos="fade-left"
-                                data-aos-duration="3000"></div>
+                            <button class="swiper-button-prev solution-button-prev" data-aos="fade-right"
+                                data-aos-duration="1000" type="button"></button>
+                            <button class="swiper-button-next solution-button-next" data-aos="fade-left"
+                                data-aos-duration="3000" type="button"></button>
                         </div>
                     </div>
                 </div>
@@ -606,8 +607,8 @@
                                 </div>
                                 <div class="swiper-pagination questions-pagination"></div>
 
-                                <div class="swiper-button-prev questions-button-prev"></div>
-                                <div class="swiper-button-next questions-button-next"></div>
+                                <button class="swiper-button-prev questions-button-prev" type="button"></button>
+                                <button class="swiper-button-next questions-button-next" type="button"></button>
                             </div>
                         </div>
                         <h3 class="questions__bonus" data-aos="fade-up-right" data-aos-duration="1000">
@@ -632,7 +633,7 @@
                             </div>
                         </div>
                         <div class="questions-decor__pic" data-aos="fade-left" data-aos-duration="2000">
-                            <img class="questions-decor" src="assets/img/questions-decor.png" alt="decor"
+                            <img class="questions-decor" src="assets/img/questions-decor.png" width="300" height="324" alt="decor"
                                 loading="lazy">
                         </div>
                     </div>
@@ -785,8 +786,8 @@
                                 </div>
                             </div>
 
-                            <div class="swiper-button-prev case-button-prev"></div>
-                            <div class="swiper-button-next case-button-next"></div>
+                            <button class="swiper-button-prev case-button-prev" type="button"></button>
+                            <button class="swiper-button-next case-button-next" type="button"></button>
                         </div>
                     </div>
                 </div>
@@ -794,16 +795,16 @@
             <section class="teams section-padding">
                 <div class="container">
                     <div class="teams__inner">
-                        <h3 class="teams__title" data-aos="fade-up" data-aos-duration="1000">
+                        <h3 class="teams__title">
                             Команда экспертов
                         </h3>
-                        <p class="teams__subtitle" data-aos="fade-up" data-aos-duration="1000">
+                        <p class="teams__subtitle">
                             Наша команда — эксперты в сфере IP. Мы берёмся за работу и доводим дело до конца, потому
                             что понимаем ценности вашего бизнеса
                         </p>
                         <div class="swiper swiper-teams">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide teams-slide" data-aos="zoom-in" data-aos-duration="3000">
+                                <div class="swiper-slide teams-slide">
                                     <div class="teams__slide-box">
                                         <div class="teams__pic">
                                             <a href="assets/img/teams-1.jpg" data-fancybox="gallery"
@@ -822,7 +823,7 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="swiper-slide teams-slide" data-aos="zoom-in" data-aos-duration="3000">
+                                <div class="swiper-slide teams-slide">
                                     <div class="teams__slide-box">
                                         <div class="teams__pic">
                                             <a href="assets/img/teams-2.jpg" data-fancybox="gallery"
@@ -839,7 +840,7 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="swiper-slide teams-slide" data-aos="zoom-in" data-aos-duration="3000">
+                                <div class="swiper-slide teams-slide">
                                     <div class="teams__slide-box">
                                         <div class="teams__pic">
                                             <a href="assets/img/teams-3.jpg" data-fancybox="gallery"
@@ -856,7 +857,7 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="swiper-slide teams-slide" data-aos="zoom-in" data-aos-duration="3000">
+                                <div class="swiper-slide teams-slide">
                                     <div class="teams__slide-box">
                                         <div class="teams__pic">
                                             <a href="assets/img/teams-4.jpg" data-fancybox="gallery"
@@ -873,7 +874,7 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="swiper-slide teams-slide" data-aos="zoom-in" data-aos-duration="3000">
+                                <div class="swiper-slide teams-slide">
                                     <div class="teams__slide-box">
                                         <div class="teams__pic">
                                             <a href="assets/img/teams-5.jpg" data-fancybox="gallery"
@@ -891,10 +892,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-button-prev teams-button-prev" data-aos="fade-right"
-                                data-aos-duration="2000"></div>
-                            <div class="swiper-button-next teams-button-next" data-aos="fade-left"
-                                data-aos-duration="2000"></div>
+                            <button class="swiper-button-prev teams-button-prev" type="button"></button>
+                            <button class="swiper-button-next teams-button-next" type="button"></button>
                         </div>
                         <div class="teams__content" data-js-tab-parent data-aos="flip-left" data-aos-duration="2000">
                             <div class="teams__box">
@@ -1059,7 +1058,7 @@
                                 У нас есть решения для всех ваших потребностей в сфере защиты и регистрации
                                 интеллектуальной собственности
                             </p>
-                            <button class="apllication__btn hover-btn" data-consultaion-btn>
+                            <button class="apllication__btn hover-btn" data-consultaion-btn type="button">
                                 <div class="btn-hover"></div>
                                 Получить индивидуальную консультацию
                             </button>
@@ -1222,7 +1221,7 @@
                         Я принимаю соглашение на обработку персональных данных и политику конфиденциальности
                     </p>
                 </label>
-                <button class="modal__btn btn-red" data-js-btn>
+                <button class="modal__btn btn-red" data-js-btn type="button">
                     Отправить
                 </button>
             </form>
