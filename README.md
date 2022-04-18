@@ -12,4 +12,4 @@
 * The site used HTML, CSS, SCSS/SASS, JavaScript(EcmaScript6), GULP assembly, AOS JS libraries, fancybox JS libraries, Swiper JS library;
 * The site has 9 pages
 
-## Link to website/Ссылка на сайт - https://abduramanovlenur.github.io/iphub-website/dist/index.html
+## Ссылка на сайт/Link to website - https://abduramanovlenur.github.io/iphub-website/dist/index.html
