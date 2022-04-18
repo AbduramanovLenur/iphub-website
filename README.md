@@ -16,4 +16,4 @@
 * APIs used: AOS JS, fancybox JS, Swiper JS;
 * The site has 9 pages;
 
-## Ссылка на сайт/Link to website - https://abduramanovlenur.github.io/iphub-website/dist/index.html
+## 🔗 https://abduramanovlenur.github.io/iphub-website/dist/index.html
