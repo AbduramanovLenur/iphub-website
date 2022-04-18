@@ -1,4 +1,4 @@
-# Проект "IPhub"
+# Проект "IPhub":
 
 * Многостраничный сайт по по вопросам защиты интеллектуальной собственности, авторского и патентного права;
 * Сайт адаптирован по мониторы комьютеров, ноутбуков, планшетов и телефонов;
@@ -8,7 +8,7 @@
 
 <br>
 
-# Project "IPhub"
+# Project "IPhub":
 
 * Multi-page site on the protection of intellectual property, copyright and patent law;
 * The site is adapted to the monitors of computers, laptops, tablets and phones;
