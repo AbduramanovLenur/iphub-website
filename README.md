@@ -17,5 +17,3 @@
 * The site has 9 pages;
 
 ## 🔗 https://abduramanovlenur.github.io/iphub-website/dist/index.html
-
-<br>
